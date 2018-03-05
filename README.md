@@ -45,8 +45,8 @@ clang++ -std=c++1y some_ex.cpp -o some_ex
   - [Chapter 19. Specialized Tools and Techniques](ch19)
   
   
-  *Don't ask what it means, but rather how it is used. —Wittgenstein*
-
+# C++特性的应用场景
+*Don't ask what it means, but rather how it is used. —Wittgenstein*
 
 ## 7.3 类的其它特性
 ### 类型成员
