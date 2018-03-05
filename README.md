@@ -43,3 +43,29 @@ clang++ -std=c++1y some_ex.cpp -o some_ex
   - [Chapter 17. Specialized Library Facilities](ch17)
   - [Chapter 18. Tools for Large Programs](ch18)
   - [Chapter 19. Specialized Tools and Techniques](ch19)
+  
+  
+  *Don't ask what it means, but rather how it is used. —Wittgenstein*
+
+
+## 7.3 类的其它特性
+### 类型成员
+  * **应用于类内部定义一个类型**；
+  * 适用访问控制；
+  * 必须先定义后使用，所以一般放在类内开始部分；
+
+### 成员函数的内联（inline）
+  * **作用是减少函数调用开销**；
+  * 2种方式：
+    * 隐式：成员函数在类内部就完成了定义，默认是内联函数；
+    * 显式：在类内函数声明处，或者在类外函数定义处（推荐）；
+  * 定义的位置在头文件的类内或者类外；
+
+### 重载成员函数
+  * **和重载函数作用类似**;
+
+### 可变数据成员(mutable data member)
+  * **应用于一个总是需要被修改的成员变量，比如类的访问次数计数**；
+  * 永远不是const；
+  * 是const对象的成员，可以改它；
+  * const成员函数也可以改它;
