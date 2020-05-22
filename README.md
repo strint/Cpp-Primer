@@ -75,4 +75,5 @@ clang++ -std=c++1y some_ex.cpp -o some_ex
   * **适合管理同时只能有一个指针指向的资源**
   * 赋值操作后，指针被move
   * outo of scope后，指针被释放
+  * 指针的释放方式，可以使用自定义函数
   * make_unique是c++14的特性
